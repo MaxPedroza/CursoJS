@@ -171,6 +171,41 @@ const num6 = 'Max';
 console.log(num5 * num6);
 */
 
+// == Aula 10 ==
+
+/*
+let num1 = prompt ('Digite o primeiro  número:');
+let num2 = prompt ('Digite o segundo número:');
+
+num1 = Number(num1);
+num2 = Number(num2);
+
+alert(`O Resultado é: ${num1 + num2}`);
+
+*/
+
+
+// == Aula 11 ==
+
+//Exercicio
+/*
+let varA = 'A'; // B
+let varB = 'B'; // C
+let varC = 'C'; // A
+
+[varA, varB, varC] = [varB, varC, varA]
+
+
+console.log(varA, varB, varC);
+*/
+
+// ==Aula 12 == STRING
+
+//vide aula 24
+
+// == Aula 13 == Exercicio String
+
+
 
 
 
