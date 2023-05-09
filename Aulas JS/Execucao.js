@@ -201,10 +201,77 @@ console.log(varA, varB, varC);
 
 // ==Aula 12 == STRING
 
+
+
+
 //vide aula 24
 
 // == Aula 13 == Exercicio String
+/*
+const nome = prompt('Digite seu Nome Completo');
 
+document.body.innerHTML += `O seu nome é: ${nome} <br />`;
+document.body.innerHTML += `O seu nome tem  ${nome.length}  letras.<br />`;
+document.body.innerHTML += `A segunda letra do seu nome é: ${nome.charAt(1)} <br />`;
+document.body.innerHTML += `O primeiro indice da letra do seu nome é: ${nome.indexOf('a')}<br />`;
+document.body.innerHTML += `O ultimo indice da letra do seu nome é: ${nome.lastIndexOf('a')} <br />`;
+document.body.innerHTML += `As ultimas 3 letras do seu nome são:${nome.slice(-3, nome.length)} <br />`;
+document.body.innerHTML += `As palavras do seu nome são:${nome.split(' ')}<br />`;
+document.body.innerHTML += `Seu nome com letras maiusculas: ${nome.toUpperCase ()}<br />`;
+document.body.innerHTML += `Seu nome com letras minusculas:${nome.toLocaleLowerCase ()} <br />`;
+*/
+
+
+// == Aula 14 == Numeros
+/*
+let num1 = 1500;
+let num2 = 2.5;
+let num3 = 10.589000456;
+let temp = num1 * '5';
+let num4 = 0.7;
+let num5 = 0.1;
+
+
+
+
+console.log(num1 + num2); // soma simples
+console.log(num1.toString() + num2); // concatenação 
+console.log(num1.toString (2)); // Representação binaria
+console.log(num3); // exibindo um numero quebrado
+console.log(num3.toFixed(2)); // utilizando uma quantidade de casas decimais definida
+console.log(Number.isInteger(num1)); // verifica se é um inteiro
+console.log(Number.isNaN(temp)); // Verfica se é um numero 
+console.log(num4 + num5); // numero nao é preciso / 0,7 + 0,1 = 0,8
+
+let res;
+res = num4 + num5;
+res = parseFloat(res.toFixed(2)) // corrigindo a imprecisão / 2 representa duas casas decimais
+//res = Number(res.toFixed(2)) // corrigindo a imprecisão utilizando number 
+console.log(res);
+*/
+
+// == Aula 15 == Math
+
+//let num1 = 9.54578;
+//let num2 = Math.floor(num1); // Arredondando numeros para baixo ↓
+//let num2 = Math.ceil(num1); // Arredondando numeros para cima ↑
+//let num2 = Math.round(num1); // Arredondando para o mais proximo, caso esteja abaixo de 0,5 arredonda pra baixo
+//console.log(num2);
+//console.log(Math.max(1,2,3,4,5,6,50,-1,-2,-3,-4,-5)); // Traz o maior numero 
+//console.log(Math.min(1,2,3,4,5,6,50,-1,-2,-3,-4,-5)); // Traz o menor numero 
+//const aleatorio = Math.round(Math.random() * (10 - 5) + 5); // Math.round traz numeros aleatorios
+//console.log(aleatorio);
+
+//console.log(Math.pow(2,10)); // exibe potencia utilziando objeto
+//console.log(2 ** 10); // outra forma de exibir potencia 
+/*
+let num2 = 9;
+console.log(num2 ** 0.5); // N²
+console.log(num2 ** (1/2));// raiz quadrada
+*/
+
+//console.log(100/0); // em Js é possivel fazer esse calculo sem que retorne erro (infinity) 
+//  esse tipo de resposta se da quando o resultado fica muito grande 
 
 
 
