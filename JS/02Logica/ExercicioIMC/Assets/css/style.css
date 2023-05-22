@@ -14,8 +14,8 @@ body {
     padding: 0;
     background: var(--primay-color);
     font-family: 'Roboto Condensed';
-    font-size: 1.3em;
-    line-height: 1.5em; 
+    font-size: 1.8em;
+    line-height: 1.5em;
 }
 
 .container{
@@ -25,18 +25,31 @@ body {
     padding: 50px;
     border-radius: 10px;
     box-shadow:  0px 2px 5px 1px rgb(24, 24, 24);
+    font-style: var(--primay-color);
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 1px black;
+}
+
+.tabela{
+    width: 500px;
+    text-align: center; 
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 form input, form label, form button{
     display: block;
     width: 100%;
     margin-bottom: 10px;
-    
 }
 
 form input {
-    font-size: 24px;
-    height: 50px;
+    font-size: 20px;
+    height: 40px;
     padding: 0 20px ;
     box-shadow: 2px 2px 3px rgb(43, 43, 43);
 }
@@ -63,4 +76,15 @@ form button:hover{
 
 form button:active{
     background:var(--primay-color-darker);
+}
+
+.texto-imc{
+    text-shadow: 2px 2px 2px white;
+    /* -webkit-text-stroke:  1px white;*/
+}
+
+.imc, .infoPeso, .infoAltura{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }

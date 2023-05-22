@@ -13,6 +13,9 @@ function meuEscopo(){
         const sobrenome = form.querySelector('.sobrenome');
         const peso = form.querySelector('.peso');
         const altura = form.querySelector('.altura');
+        const valorPeso = Number(peso.value);
+        const valorAltura = Number(altura.value);
+        const imc = valorPeso / valorAltura ** 2;
 
         //pessoas.push(nome, sobrenome, peso, altura);                                  // Forma que eu fiz (não acrscentava nos seguintes indices do array, apenas no indice 0)
 
@@ -21,17 +24,20 @@ function meuEscopo(){
             nome: nome.value,
             sobrenome: sobrenome.value,
             peso: peso.value,
-            altura: altura.value
+            altura: altura.value,
+            imc: imc.toFixed(2),
 
         });
 
+       
         console.log(pessoas);
 
-        console.log(nome.value, sobrenome.value, peso.value, altura.value);
+        
 
         resultado.innerHTML += `<p>${nome.value} ${sobrenome.value}</p>
                                 <p>Peso:${peso.value}</p>
-                                <p>Altura:${altura.value}cm</p>`;
+                                <p>Altura:${altura.value}cm</p>
+                                <p>${imc.toFixed(2)}`;
   
     }
     form.addEventListener('submit', recebeEventoForm);

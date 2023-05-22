@@ -91,9 +91,8 @@ anoNascimento = 2023 - idade;
 console.log (nome, sobreNome);
 console.log (`Nasceu em ${anoNascimento}, tem ${idade}, pesa ${peso}Kg e mede ${altura} de altura.`);
 console.log(`Seu IMC é: ${imc}.`);
-
-
 */
+
 
 /* == Aula 7== 
 
