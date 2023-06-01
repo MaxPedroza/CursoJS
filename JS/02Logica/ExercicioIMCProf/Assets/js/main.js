@@ -27,13 +27,22 @@ form.addEventListener('submit', function(e){                  // Cria uma funcç
     //setResultado('max');                                      // chama a função que cria uma mensagem em um paragrafo gerado via codigo dentro da div #resultado (linha #)
 });
 
+function getNivelImc (imc){
+    const nivel = ['Abaixo do peso', 'Peso Normal', 'Sobrepeso', 'Obesidade Grau 1','Obesidade Grau 2','Obesidade Grau 3'];
+    if (imc>=39.9) return nivel [5];
+    if (imc>=34.9) return nivel [4];
+    if (imc>=29.9) return nivel [3];
+    if (imc>=24.9) return nivel [2];
+    if (imc>=18.5) return nivel [4];
+}
+
 function getImc (peso, altura){
     const imc = peso / altura** 2;
     return imc.toFixed(2);
 }
 
-function criaP (){
-    const p = document.createElement('p');                      // cria uma constante para gerar um paragrafo p no html 
+function criaP (){                                                // Função cria paragrafo 
+    const p = document.createElement('p');                        // cria uma constante para gerar um paragrafo p no html 
     //p.classList.add('paragrafo-resultado');                     // adiciona uma listsa de classes ao paragrafo, caso nao tenha uma uma classe com o nome paragrafo-resultado
     //p.innerHTML = `Conteudo`                                    // adiciona o controle do paragrafo a constante    
     return p;
