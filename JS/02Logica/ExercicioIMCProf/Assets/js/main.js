@@ -20,7 +20,8 @@ form.addEventListener('submit', function(e){                  // Cria uma funcç
     }
 
     const imc = getImc (peso, altura);                          //
-    console.log(imc)
+    const nivelImc = getNivelImc(imc);
+    console.log(imc, nivelImc);
 
     //console.log(peso, altura);                              // verifica se as informações foram convertidas para numero
 
@@ -33,7 +34,8 @@ function getNivelImc (imc){
     if (imc>=34.9) return nivel [4];
     if (imc>=29.9) return nivel [3];
     if (imc>=24.9) return nivel [2];
-    if (imc>=18.5) return nivel [4];
+    if (imc>=18.5) return nivel [1];
+    if (imc < 18.5) return nivel[0];
 }
 
 function getImc (peso, altura){
