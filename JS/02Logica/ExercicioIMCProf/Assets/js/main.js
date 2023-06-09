@@ -19,9 +19,13 @@ form.addEventListener('submit', function(e){                  // Cria uma funcç
         
     }
 
-    const imc = getImc (peso, altura);                          //
-    const nivelImc = getNivelImc(imc);
-    console.log(imc, nivelImc);
+    const imc = getImc (peso, altura);                          // constante que atribui peso e altura para imc com função getImc
+    const nivelImc = getNivelImc(imc);                          // constante que atribui função getNivelImc
+
+    const msg = `Seu IMC é ${imc} (${nivelImc}).`;              // constante que exibe mensagem di imc e nivel
+   
+    setResultado(msg, true);                                    // chama funcao setResultado
+
 
     //console.log(peso, altura);                              // verifica se as informações foram convertidas para numero
 
@@ -53,9 +57,17 @@ function criaP (){                                                // Função cr
 function setResultado(msg, isValid){                            // Função para gerar msg na div resutlado
     const resultado = document.querySelector('#resultado');     // cria uma const para adicionar controle da div #resultado
     resultado.innerHTML = '';                                   // adciona controle da div no html na constante resultado
+
     
     const p = criaP();                                          // Adiciona a função criaP (linha #) para constante
     
+    if (isValid) {
+        
+        p.classList.add('paragrafo-resultado');
+    } else{
+        p.classList.add('bad')
+    }
+
     p.innerHTML = msg;
     resultado.appendChild(p);                                   // adiciona a constante resultado o paragrafo, sendo assim, pode adicionar a mensagem da linha 14 de p (paragrafo) para resultado da linha # (cosntante rsultado)
 }

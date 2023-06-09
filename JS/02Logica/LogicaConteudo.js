@@ -112,4 +112,29 @@ Obs.: caso em uma estrutura condicional haja mais de uma opção verdadeira, ela
 
 */
 
-// == Aula 26 == Modelo HTML e CSS para exercícios posteriores
+// == Aula 26 == Modelo HTML e CSS para exercícios posteriores - Exercicio IMC
+
+
+// == Aula 27 == Operação Ternaria (Aula volta ao seu numero corretamente)
+
+//(condicao) ? 'valor verdadeirao': 'valor falso'
+/*
+const pontuacaoUsuario = 999;
+const nivelUsuario = pontuaçãoUsuario >= 1000 ?'Usuario VIP': 'Usuario Normal';
+
+const corUsuario = null;
+const corPadrao = corUsuario|| 'Preta';
+
+console.log(nivelUsuario, corPadrao);
+*/
+
+// == Aula 28 == Objeto Date
+/*
+const tresHoras = 60 * 60 * 3 * 1000;                    // Altera a data por milesimo de segundo
+const data = new Date(0 + tresHoras);                    // Date é uma função construtora, funções contrutoras começam com letra Maiuscula!
+*/
+//                   (ano mes dia hora minutos segundos e milisegundos) - é possivel omitir as informações a direita, só é possivel emitir ate o dia, se nao, entende-se que o ano é milionesimo de segundo
+//const data = new Date(2023,5,20,15,14,27,500);          // Mes começa no zero (0 - Jan) //a, m, d, h, M, s, ms
+
+
+
