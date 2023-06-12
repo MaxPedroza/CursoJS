@@ -5,25 +5,17 @@ function meuEscopo(){
     const imc2 = document.querySelector('.imc2');
     const imc3 = document.querySelector('.imc3');
     const imc4 = document.querySelector('.imc4');
-    const imc5 = document.querySelector('.imc5');
-   
-   
-        
+    const imc5 = document.querySelector('.imc5');        
      
     document.getElementById('semana').style.display = "none";
-    document.getElementById('texto-semanas').style.display = "none";     
-        
-       
-
-        
+    document.getElementById('texto-semanas').style.display = "none";       
     
         function recebeEventoForm (evento) {
              evento.preventDefault();
         
             const inputPeso = form.querySelector('.peso');                                             
             const inputAltura = form.querySelector('.altura');  
-            const inputSemanas = form.querySelector('.semana');  
-               
+            const inputSemanas = form.querySelector('.semana');              
             
             const peso = Number(inputPeso.value);
             const altura = Number(inputAltura.value); 
@@ -49,7 +41,6 @@ function meuEscopo(){
                 imc4.innerHTML = '';
                 imc5.innerHTML = '';
                 imc2.innerHTML = `<p><b> ${calculo.toFixed(2)} Seu IMC está sobrepeso!</b></p>`;
-
             }
             function obesidade1(){
                 imc1.innerHTML = '';
@@ -72,8 +63,6 @@ function meuEscopo(){
                 imc4.innerHTML = '';
                 imc5.innerHTML = `<p><b>${calculo.toFixed(2)} Seu IMC está com Obesidade grau 3!</b></p>`;
             }
-
-
             
             const calculo = peso / altura ** 2;
                                   
@@ -91,8 +80,8 @@ function meuEscopo(){
             */
             
             console.log (semana, peso, altura, calculo);
-            /*
-            if (calculo <= 18.5 ) baixoPeso();   
+            
+            /*if (calculo <= 18.5 ) baixoPeso();   
             if (calculo >= 18.5) pesoNormal();
             if (calculo >= 25) sobrePeso();
             if (calculo >= 30) obesidade1();
@@ -107,19 +96,34 @@ function meuEscopo(){
                 semana <= 42 = 25,0 bp*/
 
             // Baixo Peso
-            if (calculo <= 19.9 && semana <=7) baixoPeso();
-            if (calculo == 20.1 && semana >= 8) baixoPeso();
-            if (calculo == 20.2 && semana <= 10) baixoPeso();
-            if (calculo == 20.3 && semana <= 11) baixoPeso();
-            if (calculo == 25.0 && semana <= 42) baixoPeso();
+            if (semana <= 7 && calculo >= 20.0) baixoPeso();
+            if (semana == 8 && calculo == 20.1) baixoPeso();
+            if (semana <= 10 && calculo == 20.2) baixoPeso();
+            if (semana >= 11  &&  calculo == 20.3) baixoPeso();
+            if (semana <= 42 && calculo <= 25.0) baixoPeso();
 
             // Peso Normal 
-            if (calculo >=20.0 && calculo <= 24.9 && semana <=7) pesoNormal();
-            if (calculo >=20.2 && calculo <= 25.0 && semana >= 8) pesoNormal();
-            if (calculo >=20.3 && calculo <= 25.2 && semana <= 10 ) pesoNormal();
-            if (calculo >=20.4 && calculo <= 25.3 && semana <= 11 ) pesoNormal();
-            if (calculo >=25.1 && calculo <= 29.2 && semana <= 42 ) pesoNormal();
-        }
+            if (semana <= 7 && calculo <= 24.9) pesoNormal();
+            if (semana == 8 && calculo >= 20.2) pesoNormal();
+            if (semana <= 10 && calculo <= 25.2) pesoNormal();
+            if (semana >= 11 && calculo <= 25.3) pesoNormal();
+            if (semana <= 42 && calculo <= 29.2  ) pesoNormal();
+
+            // Sobrepeso 
+            if (semana <= 7 && calculo <= 30.0) sobrePeso();
+            if (semana >= 8 && calculo >= 25.1) sobrePeso();
+            if (semana <= 10 && calculo <= 30.2) sobrePeso();
+            if (semana >= 11 && calculo <= 30.3) sobrePeso();
+            if (semana <= 42 && calculo <= 33.2) sobrePeso();
+
+            // Obesidade 
+            if (semana <= 7 && calculo >= 30.1) obesidade3();
+            if (semana >= 8 && calculo >= 30.2) obesidade3();
+            if (semana <= 10 && calculo >= 30.3) obesidade3();
+            if (semana >= 11 && calculo >= 30.4) obesidade3();
+            if (semana <= 42 && calculo >= 33.3) obesidade3();
+        }   
+
     form.addEventListener('submit', recebeEventoForm);
 }
 
