@@ -22,14 +22,10 @@ form.addEventListener('submit', function(e){                  // Cria uma funcç
     const imc = getImc (peso, altura);                          // constante que atribui peso e altura para imc com função getImc
     const nivelImc = getNivelImc(imc);                          // constante que atribui função getNivelImc
 
-    const msg = `Seu IMC é ${imc} (${nivelImc}).`;              // constante que exibe mensagem di imc e nivel
+    const msg = `Seu IMC é ${imc} (${nivelImc}).`;              // constante que exibe mensagem do imc e nivel
    
     setResultado(msg, true);                                    // chama funcao setResultado
 
-
-    //console.log(peso, altura);                              // verifica se as informações foram convertidas para numero
-
-    //setResultado('max');                                      // chama a função que cria uma mensagem em um paragrafo gerado via codigo dentro da div #resultado (linha #)
 });
 
 function getNivelImc (imc){
@@ -39,8 +35,9 @@ function getNivelImc (imc){
     if (imc>=29.9) return nivel [3];
     if (imc>=24.9) return nivel [2];
     if (imc>=18.5) return nivel [1];
-    if (imc < 18.5) return nivel[0];
+    if (imc < 18.5) return nivel[0];    
 }
+
 
 function getImc (peso, altura){
     const imc = peso / altura** 2;
@@ -60,14 +57,14 @@ function setResultado(msg, isValid){                            // Função para
 
     
     const p = criaP();                                          // Adiciona a função criaP (linha #) para constante
-    
-    if (isValid) {
-        
+    if (isValid) {        
         p.classList.add('paragrafo-resultado');
-    } else{
+   
+    }else {    
         p.classList.add('bad')
     }
 
+       
     p.innerHTML = msg;
     resultado.appendChild(p);                                   // adiciona a constante resultado o paragrafo, sendo assim, pode adicionar a mensagem da linha 14 de p (paragrafo) para resultado da linha # (cosntante rsultado)
 }

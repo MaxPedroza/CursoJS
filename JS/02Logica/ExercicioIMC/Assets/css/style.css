@@ -34,11 +34,24 @@ body {
     text-shadow: 1px 2px 1px black;
 }
 
-.tabela{
-    width: 500px;
-    text-align: center; 
-    color: white;
-    text-shadow: 2px 2px 2px black;
+#gestante{
+    text-align:center;
+    cursor: pointer;
+    background-color:white;
+    width: 30px;
+    height: 30px;
+    box-shadow: 2px 2px 3px rgb(24, 24, 24);
+}
+
+#selecao{
+    padding: 0px;
+    font-size: 25px;
+       
+}
+
+#check{
+    font-size: 30px;
+    display: none;
 }
 
 form input, form label, form button{
@@ -78,13 +91,51 @@ form button:active{
     background:var(--primay-color-darker);
 }
 
+.gestante{
+    height: 20px;
+    width: 20px;
+    box-shadow: 0px 0px 0px;
+    border: 0px;
+}
 .texto-imc{
-    text-shadow: 2px 2px 2px white;
-    /* -webkit-text-stroke:  1px white;*/
+    color: white;
+    
+    -webkit-text-stroke:  1px black;
 }
 
-.imc, .infoPeso, .infoAltura{
+.imc1, .infoPeso, .infoAltura{
     text-align: center;
+    font-family: 'Roboto Condensed';
     color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.imc2{
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    color: white;
+    background-color: rgb(135, 227, 73);
+    text-shadow: 1px 2px 2px black;
+}
+.imc3{
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    color: white;
+    background-color: rgb(227, 214, 73);
+    text-shadow: 2px 2px 2px black;
+}
+.imc4{
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    color: white;
+    background-color: rgb(227, 134, 53);
+    text-shadow: 2px 2px 2px black;
+}
+
+.imc5, .gestacional1{
+    text-align: center;
+    font-family: 'Roboto Condensed';
+    color: white;
+    background-color: rgb(227, 73, 73);
     text-shadow: 2px 2px 2px black;
 }

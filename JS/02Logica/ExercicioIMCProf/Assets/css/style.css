@@ -71,6 +71,20 @@ form button:active{
     padding: 10px 20px;
 }
 
+.paragrafo-resultado2{                                      /* paragrafo criado via script*/
+    background-color:rgb(226, 195, 38);
+    padding: 10px 20px;
+}
+
+.paragrafo-resultado3{                                      /* paragrafo criado via script*/
+    background-color:rgb(226, 138, 38);
+    padding: 10px 20px;
+}
+
+.paragrafo-resultado4{                                      /* paragrafo criado via script*/
+    background-color:rgb(137, 10, 6);
+    padding: 10px 20px;
+}
 .bad{
     background: rgb(253, 45, 45);
 }
