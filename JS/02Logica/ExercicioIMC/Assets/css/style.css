@@ -18,6 +18,12 @@ body {
     line-height: 1.5em;
 }
 
+#calculo{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
 .container{
     max-width: 640px;
     margin: 50px auto;
@@ -50,8 +56,15 @@ body {
 }
 
 #check{
+    color: var(--primay-color-lihgter);
     font-size: 30px;
     display: none;
+}
+
+.material-symbols-sharp{
+    color: white;
+    font-size: 30px;
+    
 }
 
 form input, form label, form button{
@@ -97,34 +110,33 @@ form button:active{
     box-shadow: 0px 0px 0px;
     border: 0px;
 }
-.texto-imc{
-    color: white;
+.texto-imc, .texto-imc-normal, .texto-imc-gestacional {
+    color: white;    
     
-    -webkit-text-stroke:  1px black;
 }
 
-.imc1, .infoPeso, .infoAltura{
+.imc1-normal, .imc1-gestacional, .infoPeso, .infoAltura{
     text-align: center;
     font-family: 'Roboto Condensed';
     color: white;
     text-shadow: 2px 2px 2px black;
 }
 
-.imc2{
+.imc2-normal, .imc2-gestacional{
     text-align: center;
     font-family: 'Roboto Condensed';
     color: white;
     background-color: rgb(135, 227, 73);
     text-shadow: 1px 2px 2px black;
 }
-.imc3{
+.imc3-normal, .imc3-gestacional{
     text-align: center;
     font-family: 'Roboto Condensed';
     color: white;
     background-color: rgb(227, 214, 73);
     text-shadow: 2px 2px 2px black;
 }
-.imc4{
+.imc4-normal{
     text-align: center;
     font-family: 'Roboto Condensed';
     color: white;
@@ -132,7 +144,7 @@ form button:active{
     text-shadow: 2px 2px 2px black;
 }
 
-.imc5, .gestacional1{
+.imc5-normal, .imc4-gestacional, .gestacional1{
     text-align: center;
     font-family: 'Roboto Condensed';
     color: white;

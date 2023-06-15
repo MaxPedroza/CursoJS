@@ -6,37 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio IMC</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section class="container" >
-        <h1 class="titulo">Cálculo IMC</h1>
-                      
-            <b class="texto-imc">Gestante</b>
+        
+        <h1 class="titulo">
+            <span class="material-symbols-sharp" id="calculo">calculate</span>
+            Cálculo IMC
+        </h1>
+            <span class="material-symbols-sharp">pregnant_woman</span>         
+            <b class="texto-imc">
+                Gestante
+            </b>
             <div id="gestante" onclick="gest()">
                 <span id="check" class="material-symbols-outlined"><b>
                 task_alt</b>
                 </span></div>
             </div>        
         <p>                    
-            <form class="form">                
-                <b class="texto-imc" id="texto-semanas">Semanas:</b>
+            <form class="form-normal" id="imc-normal"> 
+                <span class="material-symbols-sharp">weight</span>
+                <b class="texto-imc">
+                    Peso:</b>
+                <input type="text" nome="peso-normal" class="peso-normal" id="peso-normal" >
+                <span class="material-symbols-sharp">height</span>
+                <b class="texto-imc-normal">Altura:</b>
+                <input type="text" name="altura-normal" class="altura-normal" id="altura-normal">
+                <button  type="submit" id="bnt-imc-normal" name="bnt-imc-normal"><b>Calcular</b></button>                
+                <div class="imc1-normal"><b>IMC</b></div>
+                <div class="imc2-normal"><b></b></div>
+                <div class="imc3-normal"><b></b></div>
+                <div class="imc4-normal"><b></b></div>
+                <div class="imc5-normal"><b></b></div>                
+            </form>
+            <form class="form-gestacional" id="imc-gestacional">
+                                
+                <b class="texto-imc-gestacional" id="texto-semanas">
+                    <span class="material-symbols-sharp">calendar_month</span>
+                    Semanas:
+                </b>
                 <input type="text" name="semana" class="semana" id="semana">
-                <b class="texto-imc">Peso:</b>
-                <input type="text" nome="peso" class="peso" id="peso" >
-                <b class="texto-imc">Altura:</b>
-                <input type="text" name="altura" class="altura" id="altura">
-                <button type="submit"><b>Enviar</b></button>
-                <div class="imc1"><b>IMC</b></div>
-                <div class="imc2"><b></b></div>
-                <div class="imc3"><b></b></div>
-                <div class="imc4"><b></b></div>
-                <div class="imc5"><b></b></div>                
+                <span class="material-symbols-sharp">weight</span>
+                <b class="texto-imc-gestacional">Peso:</b>
+                <input type="text" nome="peso-gestacional" class="peso-gestacional" id="peso-gestacional" >
+                <span class="material-symbols-sharp">height</span>
+                <b class="texto-imc-gestacional">Altura:</b>
+                <input type="text" name="altura-gestacional" class="altura-gestacional" id="altura-gestacional">                
+                <button type="submit" id="bnt-imc-gestacional" name="bnt-imc-gestacional"><b>Calcular</b></button>
+                <div class="imc1-gestacional"><b>IMC</b></div>
+                <div class="imc2-gestacional"><b></b></div>
+                <div class="imc3-gestacional"><b></b></div>
+                <div class="imc4-gestacional"><b></b></div>
+                             
             </form>
         </p>
     </section>
     <script src="js/main.js"></script>  
-    <script src="/JS/Teste/TesteCheck/gest.js"></script>  
+    <script src="/JS/02Logica/ExercicioIMC/Assets/js/gest.js"></script> 
+    <script src="/JS/02Logica/ExercicioIMC/Assets/js/gestante.js"></script>
 
 </body>
 </html> 
