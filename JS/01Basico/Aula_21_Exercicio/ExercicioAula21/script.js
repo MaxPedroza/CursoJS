@@ -17,7 +17,7 @@ function meuEscopo(){
         const valorAltura = Number(altura.value);
         const imc = valorPeso / valorAltura ** 2;
 
-        //pessoas.push(nome, sobrenome, peso, altura);                                  // Forma que eu fiz (não acrscentava nos seguintes indices do array, apenas no indice 0)
+        //pessoas.push(nome, sobrenome, peso, altura);                                  // Forma que eu fiz (não acrescentava nos seguintes indices do array, apenas no indice 0)
 
         pessoas.push({                                                                  // Forma correta (desta forma ela acrescenta e exibe corretamente o conteudo do array)
            
