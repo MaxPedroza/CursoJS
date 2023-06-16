@@ -21,58 +21,48 @@ function meuEscopo(){
             const altura = Number(inputAltura.value); 
 
             const calculo = peso / altura ** 2;
+
+            function limpa(){                
+                imc1.innerHTML = '';
+                imc2.innerHTML = '';
+                imc3.innerHTML = '';                
+                imc4.innerHTML = '' ;                
+                imc5.innerHTML = '' ; 
+            }
             
 
             function baixoPeso(){
-                imc1.innerHTML = '';
-                imc2.innerHTML = '';
-                imc3.innerHTML = '';
-                imc4.innerHTML = '';
+                limpa()                
                 imc5.innerHTML = `<p> <b>${calculo.toFixed(2)} Seu IMC está baixo do peso!</b></p>`; 
             }
             function pesoNormal(){
-                imc1.innerHTML = '';
-                imc3.innerHTML = '';
-                imc4.innerHTML = '';
-                imc5.innerHTML = '';
+                limpa()                
                 imc2.innerHTML = `<p><b> ${calculo.toFixed(2)} Seu IMC está com peso Normal!</b></p>`;
             }
             function sobrePeso(){
-                imc1.innerHTML = '';
-                imc3.innerHTML = '';
-                imc4.innerHTML = '';
-                imc5.innerHTML = '';
+                limpa()                
                 imc2.innerHTML = `<p><b> ${calculo.toFixed(2)} Seu IMC está sobrepeso!</b></p>`;
             }
             function obesidade1(){
-                imc1.innerHTML = '';
-                imc2.innerHTML = '';
-                imc4.innerHTML = '';
-                imc5.innerHTML = '';
+                limpa()                
                 imc3.innerHTML = `<p><b> ${calculo.toFixed(2)} Seu IMC está com Obesidade grau 1!</b></p>`;
             }
             function obesidade2(){
-                imc1.innerHTML = '';
-                imc2.innerHTML = '';
-                imc3.innerHTML = '';
-                imc5.innerHTML = '';
+                limpa()                
                 imc4.innerHTML = `<p><b>${calculo.toFixed(2)} Seu IMC está com Obesidade grau 2!</b></p>`;
             }
             function obesidade3(){
-                imc1.innerHTML = '';
-                imc2.innerHTML = '';
-                imc3.innerHTML = '';
-                imc4.innerHTML = '';
+                limpa()                
                 imc5.innerHTML = `<p><b>${calculo.toFixed(2)} Seu IMC está com Obesidade grau 3!</b></p>`;
             }
             
             
                                   
-            if (!peso) { imc1.innerHTML = `<p><b>Peso inválido</b></p>`; 
+            if (!peso) { limpa(), imc1.innerHTML = `<p><b>Peso inválido</b></p>`; 
             return
             }
 
-            if (!altura){ imc1.innerHTML = `<p><b>Altura inválida</b></p>`;
+            if (!altura){ limpa(), imc1.innerHTML = `<p><b>Altura inválida</b></p>`;            
             return
             }
            
