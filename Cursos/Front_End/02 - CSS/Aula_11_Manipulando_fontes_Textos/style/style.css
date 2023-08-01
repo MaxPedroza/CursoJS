@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.artigo{
+    width: 1500PX;
+    margin: 40PX auto;
+    text-align: center;
+}
+
+.artigo h1{
+    color: darkblue;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.artigo p{
+    font-size: 17px;
+    font-family: tahoma;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 40px;
+}
