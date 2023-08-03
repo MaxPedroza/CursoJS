@@ -4,3 +4,56 @@
     box-sizing: border-box;
 }
 
+html, body{
+    height: 100%;
+}
+
+.lista, .lista2{
+    list-style-position: inside;
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.lista li, .lista2 li{
+    font-size: 20px;
+    color: darkblue;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.lista .item3, .lista2 .item3{
+    color: darkred;
+    font-weight: bold;
+}
+
+ol{
+    list-style-position: inside;
+}
+
+li{
+    color: red;
+}
+
+.um{
+    width: 500px;
+    height: 800px;
+    background: red;
+}
+
+.um .dois{
+    width: 300px;
+    height: 300px;
+    background: green;
+}
+
+.um .tres{
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+
+.um .quatro{
+    width: 50px;
+    height: 50px;
+    background: darkgray;
+}

@@ -8,3 +8,10 @@ html, body{
     height: 100%;
 }
 
+.tipo1{
+    color:olivedrab;
+}
+
+.link{
+    font-size: 30px;
+}

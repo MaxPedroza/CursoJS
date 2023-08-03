@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    box-sizing:border-box;
+    background-color: lightgray;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2%
+}
+
+h1{
+    margin-left: 1%;
+}
+
+p{
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+article{
+    background-color: antiquewhite;
+    width: 100%;
+    margin: 0 auto;    
+    margin-top: 2%;
+}
