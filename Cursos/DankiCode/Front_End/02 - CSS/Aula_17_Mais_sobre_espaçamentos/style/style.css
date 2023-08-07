@@ -21,13 +21,11 @@ h1{
 }
 
 p{
-    margin-top: 1%;
-    margin-left: 2%;
+    margin: 1% 0% 0% 1.5%;    
 }
 
 article{
     background-color: antiquewhite;
     width: 100%;
-    margin: 0 auto;    
-    margin-top: 2%;
+    margin: 0.5% 0% 0% 0%
 }
