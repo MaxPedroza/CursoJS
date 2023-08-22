@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    box-sizing:content-box;
+    background-color: lightgray;
+    width: 1280px;
+    margin: 0 auto;    
+}
+
+h1{
+    margin-left: 1%;
+}
+
+p{                                              /* paragrafo é um display block porem pode ser estilizado como inline  */
+    margin: 1% 0% 0% 1.5%;    
+}
+
+article{
+    background-color: antiquewhite;           /* alinha o conteudo no topo caso o conteudo seja pouco e */
+    vertical-align: top;
+    display: inline-block;                      /* por padrao as divs agem em blocos e nao em linhas */
+    width: 640px;
+    margin: 30px -4px 0px 0px; 
+    border-style: dotted;
+    border-color: olive;
+    border-width: 3px;
+    /*border-right-style: groove;                  /*adicionar apenas em um dos lados 
+    /* Resumo de tudo acima
+    border: 3px solid rgba(255,255,255,1);     /* rgba traz agora transparencia (a) com valor 0*/
+     
+    box-sizing: border-box;   
+}
+
+span{                                           /*span é um display inline e  nao recebe largura x altura*/
+
+}

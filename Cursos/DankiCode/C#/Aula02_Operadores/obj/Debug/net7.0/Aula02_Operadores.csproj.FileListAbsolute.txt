@@ -1,0 +1,5 @@
+C:\Cursos\cursos\dankicode\c#\aula02_operadores\obj\Debug\net7.0\Aula02_Operadores.csproj.AssemblyReference.cache
+C:\Cursos\cursos\dankicode\c#\aula02_operadores\obj\Debug\net7.0\Aula02_Operadores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cursos\cursos\dankicode\c#\aula02_operadores\obj\Debug\net7.0\Aula02_Operadores.AssemblyInfoInputs.cache
+C:\Cursos\cursos\dankicode\c#\aula02_operadores\obj\Debug\net7.0\Aula02_Operadores.AssemblyInfo.cs
+C:\Cursos\cursos\dankicode\c#\aula02_operadores\obj\Debug\net7.0\Aula02_Operadores.csproj.CoreCompileInputs.cache
