@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+#container{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: gray;
+    /*overflow: hidden;               /* esconde o conteudo nao deixando transbordar para fora da div*/
+    /*overflow: auto;                 /* criar uma barra de rolagem para visualizar o conteudo*/
+    /*overflow: scroll;               /* ele mantem uma barra de rolagem mesmo nao utilizando*/
+    /*overflow: visible;              /* da visibildiade para o conteudo ultrapassar a div  */
+    overflow-x: auto;               /* cria barra de rolagem na esquerda quando conteudo ocupar espaço, quando nao definido overflow-y o mesmo torna-se automatico mesmo escondendo (hidden) oferfow-x*/
+}
+
+#container p{                       /* utilizado apenas para gerar mais espaço para exemplificar overflow-x*/
+    width: 500px;
+}

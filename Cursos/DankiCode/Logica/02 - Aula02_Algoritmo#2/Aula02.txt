@@ -1,0 +1,21 @@
+// Cálculo de iadade
+
+INICIAR ALGORITMO
+
+    Declarar Variaveis: Ano_nascimento = 1985, Ano_Atual = pegarAno, idade_atual = Ano_Atual - Ano_nascimento
+
+    Mostrar na tela = Minha idade é:(idade_atual)
+
+FIM ALGORITMO
+
+// Cálculo de idade dinamico 
+
+INICAR ALGORITMO
+
+    Declarar variaveis: Ano_Nascimento,  Ano_Atual = pegarAno;
+
+    Receber variavel (Ano_Nascimento do usuario);
+
+    Declarar Variaveis idade_atual = Ano_Atual - Ano_Nascimento;
+
+    Mostrar na tela: Minha idade é: (idade_atual)

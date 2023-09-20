@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+#container{
+    width: 400px;
+    height: 400px;
+    background-color: lightslategray;
+}
+
+#container span{
+    display: inline-block;
+    width: inherit;
+    height: inherit;  
+    background-color: darkred;  
+}
