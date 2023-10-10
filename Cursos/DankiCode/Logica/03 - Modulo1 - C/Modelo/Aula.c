@@ -1,8 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
-    print("Max Pedroza");
+    print("Fuck World");
     return 0;
 }
