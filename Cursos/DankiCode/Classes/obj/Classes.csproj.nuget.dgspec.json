@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Cursos\\Cursos\\DankiCode\\C#\\Modulo1_Variaveis_e_Estruturas_Condicional\\Aula02_Operadores\\Aula02_Operadores.csproj": {}
+    "C:\\Cursos\\Cursos\\DankiCode\\Classes\\Classes.csproj": {}
   },
   "projects": {
-    "C:\\Cursos\\Cursos\\DankiCode\\C#\\Modulo1_Variaveis_e_Estruturas_Condicional\\Aula02_Operadores\\Aula02_Operadores.csproj": {
+    "C:\\Cursos\\Cursos\\DankiCode\\Classes\\Classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Cursos\\Cursos\\DankiCode\\C#\\Modulo1_Variaveis_e_Estruturas_Condicional\\Aula02_Operadores\\Aula02_Operadores.csproj",
-        "projectName": "Aula02_Operadores",
-        "projectPath": "C:\\Cursos\\Cursos\\DankiCode\\C#\\Modulo1_Variaveis_e_Estruturas_Condicional\\Aula02_Operadores\\Aula02_Operadores.csproj",
+        "projectUniqueName": "C:\\Cursos\\Cursos\\DankiCode\\Classes\\Classes.csproj",
+        "projectName": "Classes",
+        "projectPath": "C:\\Cursos\\Cursos\\DankiCode\\Classes\\Classes.csproj",
         "packagesPath": "C:\\Users\\U003483\\.nuget\\packages\\",
-        "outputPath": "C:\\Cursos\\Cursos\\DankiCode\\C#\\Modulo1_Variaveis_e_Estruturas_Condicional\\Aula02_Operadores\\obj\\",
+        "outputPath": "C:\\Cursos\\Cursos\\DankiCode\\Classes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\U003483\\AppData\\Roaming\\NuGet\\NuGet.Config"

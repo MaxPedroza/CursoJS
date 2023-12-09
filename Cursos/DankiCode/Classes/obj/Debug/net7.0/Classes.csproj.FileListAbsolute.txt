@@ -1,0 +1,5 @@
+c:\Cursos\Cursos\DankiCode\Classes\obj\Debug\net7.0\Classes.csproj.AssemblyReference.cache
+c:\Cursos\Cursos\DankiCode\Classes\obj\Debug\net7.0\Classes.GeneratedMSBuildEditorConfig.editorconfig
+c:\Cursos\Cursos\DankiCode\Classes\obj\Debug\net7.0\Classes.AssemblyInfoInputs.cache
+c:\Cursos\Cursos\DankiCode\Classes\obj\Debug\net7.0\Classes.AssemblyInfo.cs
+c:\Cursos\Cursos\DankiCode\Classes\obj\Debug\net7.0\Classes.csproj.CoreCompileInputs.cache
